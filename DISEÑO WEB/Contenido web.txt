@@ -1,0 +1,27 @@
+Nuetras web constara de 10 paginas que seran:
+-Una principal que seria el inicio, donde podemos encontrarnos con un test, una busqueda y patologias.
+-Ademas dispondremos de una pagina web por cada patologia que son 8. Con la siguientes información: descripción, causas, síntomas, tratamiento.
+
+
+Pagina principal
+
+En la parte superior de la pagina principal encontramos un banner compuesto de tres imagenes(test, busqueda, patologias)
+que a su vez son botones que te redirigiran a la opción deseada.
+
+Al pulsar el boton test, la pagina hara un autoscroll a el inicio del test, el cual contara con diez preguntas para identificar tu patologia.
+Al final de las preguntas se situa el boton de resultado que te redirigiran a tu diacnostico.
+
+Mas abajo encontraremos el cajon de busqueda;
+
+Indice patologias, con n hypervinculo con enlace a cada una de las patologias, que estaran documentadas en otras paginas.
+
+--------------------------------------
+
+Paginas de patologias
+
+La web tendra un titulo donde se indicara el nombre de la patologia. Primero indicaremos la descripcion de cada patologia, luego casusas, sintomas y tratamiento.
+
+
+
+//Necesitamos que nos indique de cuantas preguntas sera el test. Decidir el nombre de la pagina web(Titulo), esquema de navegación.
+
