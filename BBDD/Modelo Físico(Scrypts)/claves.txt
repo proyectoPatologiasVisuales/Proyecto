@@ -1,0 +1,26 @@
+MySQL 5.5 database added.  Please make note of these credentials:
+
+       Root User: adminGXjlxzG
+   Root Password: QBShkFDW_69e
+   Database Name: femxa
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+
+You can manage your new MySQL database by also embedding phpmyadmin.
+The phpmyadmin username and password will be the same as the MySQL credentials above.
+
+
+
+
+git clone ssh://587fca0889f5cf057100004b@femxa-ebtm.rhcloud.com/~/git/femxa.git/cd femxa/
+
+
+usuario: valexx55@gmail.com
+pwd: femxa1234
+
+
+dir: https://www.openshift.com/ 
+((my aacount web console))
+
+
+Crear base de datos!
