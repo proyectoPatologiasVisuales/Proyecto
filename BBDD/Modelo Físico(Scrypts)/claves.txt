@@ -24,3 +24,8 @@ dir: https://www.openshift.com/
 
 
 Crear base de datos!
+
+Please make note of these MySQL credentials again:
+  Root User: adminGXjlxzG
+  Root Password: QBShkFDW_69e
+URL: https://femxa-ebtm.rhcloud.com/phpmyadmin/
