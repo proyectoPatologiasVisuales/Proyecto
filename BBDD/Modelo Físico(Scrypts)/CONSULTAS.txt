@@ -1,3 +1,20 @@
 SELECT * FROM Sintomas;
 Select des_sint From Sintomas Where id_sint IN (Select id_sint From Causas Where id_patol = 2);
 Select nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Causas where id_sint =5);
+
+-----
+-- 1. Buscar patologias por nombre
+-- 2. Buscar sintomas por nombre
+-- 3. Listar patologias
+-- 4. Buscar lista patologia por sintomas
+-----
+
+1. ---
+  SELECT * FROM Patologias;
+  SELECT nom_pato1 FROM Patologias WHERE id_pato1, :nom_pato1;
+  SELECT * FROM Patologias WHERE nom_pato1 LIKE :nom_pato1 %; 
+
+  SELECT * FROM Patologias;
+  SELECT nom_pato1 From Patologias Where id_pato1 IN (Select id_pato1 From Patlogias Where :id_patol);
+  SELECT nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Patologias where :id_pato1);
+2. ---
