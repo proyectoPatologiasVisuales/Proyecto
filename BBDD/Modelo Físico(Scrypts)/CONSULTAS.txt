@@ -1,0 +1,3 @@
+SELECT * FROM Sintomas;
+Select des_sint From Sintomas Where id_sint IN (Select id_sint From Causas Where id_patol = 2);
+Select nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Causas where id_sint =5);
