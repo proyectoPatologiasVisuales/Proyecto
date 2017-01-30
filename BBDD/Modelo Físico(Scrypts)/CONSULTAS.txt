@@ -34,6 +34,9 @@ Select nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol 
    
 4. --- Buscar lista patologia por sintomas ---
 
+    SELECT nom_patol FROM Patologias WHERE id_patol IN (SELECT id_patol FROM Causas WHERE id_sint = 3);
+    // Muestra las patologias con los sintomas que has buscado
+
 
 
 
