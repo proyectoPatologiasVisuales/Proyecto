@@ -1,0 +1,18 @@
+Base de datos - Patologías Oculares:
+
+https://femxa-ebtm.rhcloud.com/phpmyadmin/
+
+USER: adminGXjlxzG
+
+PASS:  QBShkFDW_69e
+
+SELECT *
+FROM Sintomas
+WHERE id_sint
+IN (
+
+SELECT id_sint
+FROM Causas
+WHERE id_patol =3
+)
+LIMIT 0 , 30
