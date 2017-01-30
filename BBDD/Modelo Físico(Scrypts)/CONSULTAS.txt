@@ -1,11 +1,50 @@
+SELECT * FROM Sintomas;
+Select des_sint From Sintomas Where id_sint IN (Select id_sint From Causas Where id_patol = 2);
+Select nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Causas where id_sint =5);
 
-1. Buscar lista de patologías por síntomas:
+-------------------------------------------
+-- 1. Buscar patologias por nombre.
+-- 2. Buscar sintomas por nombre.
+-- 3. Listar patologias.
+-- 4. Buscar lista patologia por sintomas.
+-------------------------------------------
+
+1. --- Buscar patologias por nombre ---
+    SELECT * FROM Patologias;
+    Select nom_patol From Patologias Where id_patol IN (Select id_patol from Patologias Where nom_patol = 1);
+
+    SELECT * FROM Patologias;
+    SELECT nom_patol From Patologias Where id_patol IN (Select id_patol From Patologias Where id_patol);
+    SELECT nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Patologias where id_patol);
+  
+2. --- Buscar sintomas por nombre ---
+    SELECT * FROM Sintomas;
+    SELECT nom_sint FROM Sintomas WHERE id_sint, :nom_sint;
+    SELECT * FROM Sintomas WHERE nom_sint LIKE :nom_sint %; 
+
+    SELECT * FROM Sintomas;
+    SELECT nom_sint From Sintomas Where id_sint IN (Select id_sint From Sintomas Where :id_sint);
+    SELECT nom_sint, trat_sint From Sintomas Where id_sint IN (Select id_sint From Sintomas where :id_sint);
+  
+3. --- Listar patologias ---
+    SELECT * FROM Patlogias
+    SELECT ALL FROM Patlogias;
+    SELECT nom_pato1 FROM Patologias WHERE nom_pato1;
+    
+4. --- Buscar lista patologia por sintomas ---
+
+
+
+
+
+
+1. Buscar lista de patologÃ­as por sÃ­ntomas:
 
 SELECT * 
 FROM  `Sintomas` 
 LIMIT 0 , 30
 
-2. Listar patologías:
+2. Listar patologÃ­as:
 
 SELECT * 
 FROM  `Patologias` 
