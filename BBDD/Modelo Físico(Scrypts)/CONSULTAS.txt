@@ -14,8 +14,8 @@ Select nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol 
     Select nom_patol From Patologias Where id_patol IN (Select id_patol from Patologias Where nom_patol = 1);
 
     SELECT * FROM Patologias;
-    SELECT nom_pato1 From Patologias Where id_pato1 IN (Select id_pato1 From Patlogias Where :id_patol);
-    SELECT nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Patologias where :id_pato1);
+    SELECT nom_patol From Patologias Where id_patol IN (Select id_patol From Patologias Where id_patol);
+    SELECT nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol From Patologias where id_patol);
   
 2. --- Buscar sintomas por nombre ---
     SELECT * FROM Sintomas;
