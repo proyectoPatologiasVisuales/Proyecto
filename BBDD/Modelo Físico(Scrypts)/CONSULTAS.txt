@@ -11,8 +11,7 @@ Select nom_patol, trat_patol From Patologias Where id_patol IN (Select id_patol 
 
 1. --- Buscar patologias por nombre ---
     SELECT * FROM Patologias;
-    SELECT nom_pato1 FROM Patologias WHERE id_pato1, :nom_pato1;
-    SELECT * FROM Patologias WHERE nom_pato1 LIKE :nom_pato1 %; 
+    Select nom_patol From Patologias Where id_patol IN (Select id_patol from Patologias Where nom_patol = 1);
 
     SELECT * FROM Patologias;
     SELECT nom_pato1 From Patologias Where id_pato1 IN (Select id_pato1 From Patlogias Where :id_patol);
