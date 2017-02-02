@@ -1,14 +1,20 @@
 package dto;
 
-public class PatologiasDTO extends genericDTO{
+import java.util.List;
+
+public class PatologiasDTO extends GenericDTO{
 
 	private int id_patologia;
 	private String nombre_patologia;
 	private String descripcion_patologia;
 	private String tratamiento_patologia;
-				
-	public PatologiasDTO(int id_patologia, String nombre_patologia,
-			String descripcion_patologia,String tratamiento_patologia) {
+	private List<SintomasDTO> lista_sintomas;
+	
+
+	
+	public PatologiasDTO(int id_patologia, String nombre_patologia,	String descripcion_patologia, 
+			String tratamiento_patologia) 
+	{
 		super();
 		this.id_patologia = id_patologia;
 		this.nombre_patologia = nombre_patologia;
@@ -17,6 +23,11 @@ public class PatologiasDTO extends genericDTO{
 	}
 	
 	public PatologiasDTO(){		
+	}
+	
+	public PatologiasDTO componerPatologia(PatologiasDTO patologia,List<SintomasDTO> sintomas){
+		
+		return null;
 	}
 	
 	public int getId_patologia() {
@@ -44,6 +55,14 @@ public class PatologiasDTO extends genericDTO{
 
 	public void setTratamiento_patologia(String tratamiento_patologia) {
 		this.tratamiento_patologia = tratamiento_patologia;
+	}
+
+	public List<SintomasDTO> getLista_sintomas() {
+		return lista_sintomas;
+	}
+
+	public void setLista_sintomas(List<SintomasDTO> lista_sintomas) {
+		this.lista_sintomas = lista_sintomas;
 	}	
 	
 }
