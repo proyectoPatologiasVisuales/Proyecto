@@ -75,12 +75,52 @@ public abstract class  GenericDAO {
 	}
 
 	public abstract GenericDTO componerObjeto (ResultSet rs) throws SQLException;
-	
-	
-	private String sustituirArgumentos(String consulta, List<Object> argumentos) {
+	 
+	/*
+	public String sustituirArgumentos (String sentencia, List<Object> argumentos) throws Exception
+	{
+		String sentenciatraducida = "";
 		
-		return null;
-	}
+		boolean sustituido = false;
+		int numargs = argumentos.size();
+		int numargsEncontrados = 0;
+		int pos = -1;
+		int longuitud = sentencia.length() - 1;
+		char carcateractual = '0';
+		String argaux = null;
+		
+		try
+		{
+		
+		while (!sustituido)
+		{
+			pos = pos + 1;
+			carcateractual = sentencia.charAt(pos);
+			if (carcateractual == ConstantesDAO.caracterParametro)
+			{
+				argaux = argumentos.get(numargsEncontrados).toString();
+				sentenciatraducida = sentenciatraducida + argaux;
+				numargsEncontrados = numargsEncontrados + 1;
+			}
+			else
+			{
+				sentenciatraducida = sentenciatraducida + carcateractual;
+			}
+			sustituido = ((numargsEncontrados == numargs) || (longuitud == pos));
+		}
+		
+		if ((numargsEncontrados == numargs) && (longuitud != pos))
+		{
+			sentenciatraducida = sentenciatraducida + sentencia.substring(pos+1, longuitud+1);
+		}
+		
+		}catch (Exception e) {
+			log.error(Error.NumeroArgumentosQuery);
+			throw e;
+		}
+		
+		return sentenciatraducida;
+	}*/
 
 	private static void liberarRecursos (Connection conn,Statement st, ResultSet rs){
 		
@@ -90,25 +130,4 @@ public abstract class  GenericDAO {
 		  
 	}
 	
-	private static void liberarRecursos (Statement st, ResultSet rs)
-	{
-		
-		if (rs != null) 	{ try { rs.close(); } catch (Exception e2) { e2.printStackTrace(); }}
-		if (st != null)	{ try {	st.close(); } catch (Exception e2) { e2.printStackTrace(); }}
-		
-	}
-	
-	private static void liberarRecursos (Statement st)
-	{
-		
-		if (st != null)	{ try {	st.close(); } catch (Exception e2) { e2.printStackTrace(); }}
-		
-	}
-	
-	private static void liberarRecursos (Connection conn)
-	{
-		
-		if (conn != null) 	{ try { conn.close(); } catch (Exception e3) { e3.printStackTrace(); }}
-		
-	}
 }

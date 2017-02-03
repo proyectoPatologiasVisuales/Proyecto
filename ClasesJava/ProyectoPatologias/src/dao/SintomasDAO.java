@@ -30,7 +30,7 @@ public class SintomasDAO extends GenericDAO {
 		
 		List<GenericDTO> lista_sintomas = null;
 		
-			lista_sintomas = ejecutarConsultaMultiple(Consultas.CONSULTA_TODOS_SINTOMAS);
+			lista_sintomas = ejecutarConsultaMultiple(Consultas.CONSULTA_LISTAR_SINTOMAS);
 		
 		return lista_sintomas;
 	}
