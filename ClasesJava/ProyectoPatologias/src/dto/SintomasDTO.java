@@ -2,13 +2,10 @@ package dto;
 
 import java.util.List;
 
-public class SintomasDTO extends GenericDTO{
+import dao.GenericDAO;
 
+public class SintomasDTO extends GenericDTO{
 	
-	/**
-	 * POJO, BEAN, JAVA BEAN, DTO
-	 * 
-	 */
 	private int id_sintoma;
 	private String nombre_sintoma;
 	private List<PatologiasDTO> lista_patologias;
@@ -21,11 +18,7 @@ public class SintomasDTO extends GenericDTO{
 	}
 
 	public SintomasDTO(){
-	}
-
-	public SintomasDTO componerSintoma(SintomasDTO sintoma,List<PatologiasDTO> patologias){
 		
-		return null;
 	}
 	
 	public SintomasDTO(String nombre_sintoma) {
@@ -44,14 +37,5 @@ public class SintomasDTO extends GenericDTO{
 	public void setNombre_sintoma(String nombre_sintoma) {
 		this.nombre_sintoma = nombre_sintoma;
 	}
-
-	public List<PatologiasDTO> getLista_patologias() {
-		return lista_patologias;
-	}
-
-	public void setLista_patologias(List<PatologiasDTO> lista_patologias) {
-		this.lista_patologias = lista_patologias;
-	}
-	
 	
 }

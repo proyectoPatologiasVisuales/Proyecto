@@ -2,6 +2,8 @@ package dto;
 
 import java.util.List;
 
+import dao.GenericDAO;
+
 public class PatologiasDTO extends GenericDTO{
 
 	private int id_patologia;
@@ -10,7 +12,8 @@ public class PatologiasDTO extends GenericDTO{
 	private String tratamiento_patologia;
 	private List<SintomasDTO> lista_sintomas;
 	
-
+	public PatologiasDTO(){		
+	}
 	
 	public PatologiasDTO(int id_patologia, String nombre_patologia,	String descripcion_patologia, 
 			String tratamiento_patologia) 
@@ -21,15 +24,7 @@ public class PatologiasDTO extends GenericDTO{
 		this.descripcion_patologia = descripcion_patologia;
 		this.tratamiento_patologia = tratamiento_patologia;
 	}
-	
-	public PatologiasDTO(){		
-	}
-	
-	public PatologiasDTO componerPatologia(PatologiasDTO patologia,List<SintomasDTO> sintomas){
-		
-		return null;
-	}
-	
+
 	public int getId_patologia() {
 		return id_patologia;
 	}

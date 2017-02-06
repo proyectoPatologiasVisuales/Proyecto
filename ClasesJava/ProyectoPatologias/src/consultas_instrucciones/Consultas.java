@@ -2,8 +2,6 @@ package consultas_instrucciones;
 
 public class Consultas {
 
-	
-	
 	public static final String CONSULTA_LISTAR_SINTOMAS 
 	= "SELECT * FROM Sintomas";
 	
@@ -22,3 +20,4 @@ public class Consultas {
 	public static final String CONSULTA_SINTOMAS_POR_PATOLOGIA 
 	= "SELECT des_sint FROM Sintomas WHERE id_sint IN (SELECT id_sint FROM Causas WHERE id_patol IN (SELECT id_patol FROM Patologias WHERE nom_patol = '";
 }
+

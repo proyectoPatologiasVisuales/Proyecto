@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import dto.GenericDTO;
+import herramientas.Pool;
 
 public abstract class  GenericDAO {
 
@@ -15,6 +16,12 @@ public abstract class  GenericDAO {
 	protected Statement stmt;
 	protected ResultSet rset;
 	
+	/**
+	 * Mediante una consulta de sql devuelve un unico objeto de GenericDTO
+	 * @param consulta - Consulta que es introducida cuando se invoca el metodo
+	 * @return
+	 * @throws SQLException
+	 */
 	public GenericDTO ejecutarConsultaSimple(String consulta) throws SQLException	{
 		
 			GenericDTO dtoAux = null;
@@ -47,6 +54,12 @@ public abstract class  GenericDAO {
 		return null;
 	}
 	
+	/**
+	 * Mediante una consulta de sql devuelve una lista de objetos de GenericDTO
+	 * @param consulta - Consulta que es introducida cuando se invoca el metodo
+	 * @return
+	 * @throws SQLException
+	 */
 	public List<GenericDTO> ejecutarConsultaMultiple(String consulta) throws SQLException{
 		List<GenericDTO> ldev = null;
 		GenericDTO dtoAux = null;
@@ -74,53 +87,28 @@ public abstract class  GenericDAO {
 		return ldev;
 	}
 
+	/**
+	 * Metodo que compone el objeto GenericDTO dado un ResulSet
+	 * @param rs
+	 * @return
+	 * @throws SQLException
+	 */
 	public abstract GenericDTO componerObjeto (ResultSet rs) throws SQLException;
 	 
-	/*
-	public String sustituirArgumentos (String sentencia, List<Object> argumentos) throws Exception
+	/**
+	 * Dado un string "sentencia" se cambia una ' de ese string y se sustituye por un String "argumento"
+	 * Tendra que contar los "(" para añadir al final la misma cantidad de ")"
+	 * @param sentencia
+	 * @param argumento
+	 * @return
+	 * @throws Exception
+	 */
+	public String sustituirArgumentos (String sentencia, String argumento) throws Exception
 	{
 		String sentenciatraducida = "";
 		
-		boolean sustituido = false;
-		int numargs = argumentos.size();
-		int numargsEncontrados = 0;
-		int pos = -1;
-		int longuitud = sentencia.length() - 1;
-		char carcateractual = '0';
-		String argaux = null;
-		
-		try
-		{
-		
-		while (!sustituido)
-		{
-			pos = pos + 1;
-			carcateractual = sentencia.charAt(pos);
-			if (carcateractual == ConstantesDAO.caracterParametro)
-			{
-				argaux = argumentos.get(numargsEncontrados).toString();
-				sentenciatraducida = sentenciatraducida + argaux;
-				numargsEncontrados = numargsEncontrados + 1;
-			}
-			else
-			{
-				sentenciatraducida = sentenciatraducida + carcateractual;
-			}
-			sustituido = ((numargsEncontrados == numargs) || (longuitud == pos));
-		}
-		
-		if ((numargsEncontrados == numargs) && (longuitud != pos))
-		{
-			sentenciatraducida = sentenciatraducida + sentencia.substring(pos+1, longuitud+1);
-		}
-		
-		}catch (Exception e) {
-			log.error(Error.NumeroArgumentosQuery);
-			throw e;
-		}
-		
 		return sentenciatraducida;
-	}*/
+	}
 
 	private static void liberarRecursos (Connection conn,Statement st, ResultSet rs){
 		
