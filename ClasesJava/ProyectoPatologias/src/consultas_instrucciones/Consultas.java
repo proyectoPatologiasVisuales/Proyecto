@@ -3,7 +3,7 @@ package consultas_instrucciones;
 public class Consultas {
 
 	public static final String CONSULTA_LISTAR_SINTOMAS 
-	= "SELECT * FROM Sintomas where";
+	= "SELECT * FROM Sintomas";
 	
 	public static final String CONSULTA_LISTAR_PATOLOGIAS 
 	= "SELECT * FROM Patologias";
