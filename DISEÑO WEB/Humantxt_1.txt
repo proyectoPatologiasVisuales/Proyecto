@@ -1,4 +1,4 @@
-
+﻿
 /* TEAM */
 
 	-- Proyect Director  -- Maximun Bronzed
@@ -6,7 +6,7 @@
 	The Boss: Isabel Martín Alonso
 	Contact: isabelmartinalonso2@gmail.com
 	GitHub: github.com/isamaralo
-	From: Madrid, Spain
+	From: Ávila, Spain
 
 	Boss Assitant: Tony López Belinchón
 	Contact: antonio3650@gmail.com
@@ -16,7 +16,7 @@
 	
 	-- Technical Information -- High Bronzed
 	
-	Director Project: Susana Montero Sánchez
+	Director Project: Susana Sánchez Montero
 	Contact: susanasanchez@auxiliamadrid.org
 	GitHub: github.com/Susanasanch
 	From: Madrid, Spain
@@ -36,7 +36,7 @@
 	
 	Shallow Worker: Cristian Hernández Del Caso
 	Contact: cristianhernandezdelcaso@hotmail.com
-	GitHub: github.com/
+	GitHub: github.com/Cristian8
 	From: Ávila, Spain
 	
 	Shallow Worker: Elena Herranz Tabales
@@ -45,7 +45,7 @@
 	From: Madrid, Spain
 	
 	Shallow Worker: Dante Jeanpier Olivares Oruna
-	Contact: diego.duque90@gmail.com
+	Contact: dante_cancer27@hotmail.com
 	GitHub: github.com/dante321
 	From: Madrid, Spain
 	
