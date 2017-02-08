@@ -95,6 +95,11 @@
 	GitHub: github.com/danielparla
 	From: Madrid, Spain
 	
+	Shallow worker: Rodrigo Muñoz Sánchez
+	Contact: rodrickms@gmail.com
+	GitHub: github.com/rodrick88
+	From: Madrid, Spain
+
 	
 	-- Design, Human.txt, Quality Control, 'N Resting -- Ultra Bronzed 
 	
