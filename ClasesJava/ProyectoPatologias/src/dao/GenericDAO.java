@@ -22,7 +22,6 @@ public abstract class  GenericDAO {
 	 * @return
 	 * @throws SQLException
 	 */
-	//ejemplo
 	public GenericDTO ejecutarConsultaSimple(String consulta) throws SQLException	{
 		
 			GenericDTO dtoAux = null;
