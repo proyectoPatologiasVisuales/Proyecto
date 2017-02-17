@@ -1,0 +1,18 @@
+Acromatopsia: img/test-acromatopsia.jpg
+
+Catarata: img/catarata-ojos.jpg
+
+Conjuntivitis: img/conjuntivitis.jpg
+
+Desprendimiento: img/desprendimiento-test.jpg
+
+Estrabismo: img/estrabismo-test.jpg
+
+Glaucoma Angulo Abierto (id=2): img/glaucoma01abierto.png
+
+Glaucoma Angulo Cerrado (id=3): img/glaucoma02cerrado.png
+
+Presbicia: img/presbicia-test.jpg
+
+Queratocono: img/tratamiento_queratocono.jpg
+
